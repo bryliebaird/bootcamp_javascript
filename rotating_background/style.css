@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
+
+/* --- Page Reset ---- */ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    /* Set Background */ 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover; 
+}
+ 
+
+.title-container {
+    /* position of container on page */ 
+    position: fixed; /* or absolute */
+    top: 25%;
+    left: 25%;
+
+    /* width of container */ 
+    width: 50%;
+
+    /* background: pink; */
+}
+
+
+.title{
+    /* style font */ 
+    font-family: 'Oswald', sans-serif; 
+    color: #fff;
+    font-size: 54px;
+
+    /* center text inside container */
+    text-align: center;
+}
