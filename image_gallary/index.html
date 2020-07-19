@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery </title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    
+    <section class='navbar'>
+        <nav class='nav'>
+            <ul class='nav-list'>
+                <li class='nav-item'>
+                    <a class="active nav-link" href="#">Trending</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="#">Tech</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="#">Politics</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="#">About</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="#">FAQ</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="#">Contact</a>
+                </li>
+              </ul>
+        </nav>
+    </section>
+
+    <section class='image-gallery'>
+        <h2 class='gallery-title'>Image gallery of your favorite treats!</h2>
+        <div class='gallery-container'>
+            <img class='image' src='img/img1.jpg' alt='treat'>
+        </div>
+
+        <div class='btn-container'>
+            <button class='btn' id='previous-btn' onclick='prevImg()'>Previous</button>
+            <button class='btn' id='next-btn' onclick='nextImg()'>Next</button>
+           
+        </div>
+    </section>
+
+
+
+
+    <script src='script.js'></script>
+
+</body>
+</html>
