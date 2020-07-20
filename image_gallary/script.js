@@ -7,37 +7,27 @@ let previous = document.querySelector('#previous-btn');
 // DOM - next btn and store in var
 let next = document.querySelector('#next-btn');
 
+// Current Image Index
 i = 0;
 
-function prevImg () {
 
+// Previous Button Function
+function prevImg () {
     if(i <= 0) { i = imgArr.length; }
     i--;  
     return setImage();
-
 }
 
-function nextImg () {
 
+// Next Button Function 
+function nextImg () {
     if(i >= imgArr.length - 1) { i = -1 }
     i++;  
     return setImage();
-
 }
 
+
+// Setting the Image 
 function setImage () {
-
     document.querySelector('.image').setAttribute('src', 'img/' + imgArr[i]);
-
 }
-
-
-
-
-
-// function prevImg () {
-//     document.querySelector('.image').setAttribute('src', 'img/' + imgArr[i]);
-
-//     // filter through array, place var after 'src'
-// }
-
