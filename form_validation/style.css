@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.page-container {
+    margin: 50px;
+}
+
+.form-heading{
+    margin-bottom: 30px;
+    background: pink;
+}
+
+.input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#submit-btn {
+    margin-top: 15px;
+    padding: 5px;
+}
