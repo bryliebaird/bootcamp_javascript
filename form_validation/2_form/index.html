@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Conditionals</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+    <div class='container'>
+        <!-- the action attribute defines the action to be preformed when the form is submitted- usually form data is sent to a page on the server when the user clicks submit button. The page it is sent to will contain server-side script that handles form data. For now, using # because we are only handling client-side -->
+        <form action="#" id='form' class='form'>
+            <h2>Register Today</h2>
+                <div class='form-control'>
+                    <label for='username'>Username</label>
+                    <input type='text' id='username' placeholder='Enter Username'>
+                    <small>Error Message</small>
+                </div>
+                <div class='form-control'>
+                    <label for='Email'>Email</label>
+                    <!--Input type can be email, then will use default email validation included but since I implemented my own email validation using js, input type will remain 'text'-->
+                    <input type='text' id='Email' placeholder='Enter Email'>
+                    <small>Error Message</small>
+                </div>
+                <div class='form-control'>
+                    <label for='Password'>Password</label>
+                    <input type='password' id='password' placeholder='Enter Password'>
+                    <small>Error Message</small>
+                </div>
+                <div class='form-control'>
+                    <label for='Password'>Confirm Password</label>
+                    <input type='password' id='password2' placeholder='Confirm Password'>
+                    <small>Error Message</small>
+                </div>
+                <button>Submit</button>
+
+        </form>
+    </div>
+    
+
+    <script src='script.js'></script>
+</body>
+</html>

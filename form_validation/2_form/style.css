@@ -1,0 +1,184 @@
+/* ---- Import Google Font ---- */ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* ------ Custom CSS Property - 'CSS variables' ----- */ 
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+
+/* ----- RESET ------- */ 
+* {
+    margin: 0px;
+    padding: 0px;
+    /* padding will not effect the width of the element when we use box-sizing: border box; property */ 
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Mulish', sans-serif;
+
+    /* all DIRECT children of the body will 
+    be a flex-item... for this project the only DIRECT child is the <div> element with class of 'container' */ 
+    display: flex;
+
+    /* align direct child <div> HORIZONTALLY to the center */ 
+    align-items: center;
+    justify-content: center;
+
+    /* align direct child <div> VERTICALLY to the center */ 
+    min-height: 100vh;
+
+}
+
+
+.container {
+    background-color: #fff;
+    /* rounded corners */ 
+    border-radius: 5px;
+
+    /* adds shadow to the container */ 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    width: 400px;
+}
+
+/* 
+
+-- short-hand value order margin/padding -- 
+
+    top
+    right
+    bottom 
+    left 
+
+    top 
+    right/left
+    bottom
+
+    top/bottom
+    right/left 
+
+    Just want one value? Use... 
+
+    margin-bottom 
+    padding- top
+    etc.
+
+*/ 
+
+
+.form {
+    padding: 30px 40px;
+}
+
+h2 {
+    text-align: center; 
+    margin: 0px 0px 20px; 
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+    position: relative; 
+    /* <small> tag containing error message will be positioned absolute */ 
+}
+
+
+/* Targeting the <label> element within the form-control container */ 
+
+.form-control label {
+    /* give own line, like <div>, push other elements down */ 
+    display: block; 
+    color: #777;
+}
+
+/* Targeting the <input> element within the form-control container */ 
+
+.form-control input {
+    display: block; 
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+
+    /* Stretch across entire parent container */  
+    width: 100%; 
+    padding: 10px;
+    font-size: 14px;   
+}
+
+.form button {
+    display: block; 
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%; 
+    
+    background: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px; 
+    color: #fff; 
+    font-size: 16px;
+
+    cursor: pointer;
+    
+}
+
+
+/* Gets rid of default blue outline when any <input> element is selected (user is 'in' the box, about to type - 'focus' state */
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+
+/* Dynamically set using javascript... form control has a class of success, then input border color will become green */ 
+
+.form-control.success input {
+    border-color: var(--success-color);
+    /* CSS variable used */ 
+}
+
+/* Dynamically set using javascript... form control has a class of error, then input border color will become red */ 
+
+.form-control.error input {
+    /* CSS variable used */ 
+    border-color: var(error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    /* positioning */ 
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+
+    /* Don't show error message when there is no error */ 
+    visibility: hidden;
+}
+
+
+/* Dynamically set using javascript... form control has a class of error, then error message will display */ 
+
+.form-control.error small {
+    visibility: visible;
+}
+
+
+
+/* 
+
+What's the difference? 
+
+    visibility: hidden;
+    keep it's space open and ready, and makes it invisible 
+
+    display: none;
+    does NOT keep space open, will collapse anything around it. But does make content invisible as well. 
+
+ */
