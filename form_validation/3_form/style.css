@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* ------ Custom CSS Property - 'CSS variables' ----- */ 
-
 :root {
     --success-color: #2ecc71;
     --error-color: #e74c3c;
@@ -148,8 +147,8 @@ h2 {
 /* Dynamically set using javascript... form control has a class of error, then input border color will become red */ 
 
 .form-control.error input {
-    
-    border-color: var(--error-color);
+    /* CSS variable used */ 
+    border-color: var(error-color);
 }
 
 .form-control small {

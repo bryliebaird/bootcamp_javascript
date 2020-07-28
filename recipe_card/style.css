@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E4DFD5;
+    font-family: 'Lora', serif;
+    color: #3D3B37;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.recipe-container {
+    margin: 50px;
+    padding: 50px;
+    border: 5px solid #99948B;
+}
+
+.recipe-container h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.recipe-info {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+
+button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #99948B;
+    font-family: 'Lora', serif;
+    padding: 20px;
+    height: 10px;
+    text-align: center;
+    color: #3D3B37;
+}
+
+
+ul li {
+    list-style: none;
+    margin: 10px 0px;
+}
