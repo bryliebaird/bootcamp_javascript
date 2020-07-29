@@ -11,20 +11,18 @@
 <body>
 
     <div class='title-container'>
-        <h1 class='page-title'>Recipes</h1>
-        <button class='btn'>Click</button>
+        <h1 id='page-title'>Recipes</h1>
+        <button onClick='showRecipe()' id='recipe-button'>Click</button>
     </div>
 
     
     <div class='recipe-container'>
         <h3 id='recipe-name'>Recipe Name</h3>  
-            <p class='recipe-info'>Servings:</p>
-            <span id='serving-size'>4</span>
+            <p class='recipe-info'>Servings:&nbsp;<span id='serving-size'>5</span></p>
+
             <p class='recipe-info'>Ingredients:</p>
-            <ul class='ingredient-list'><br>
-                <span><i class="fas fa-shopping-cart"></i><li class='ingredient-item'>Ingredients list will appear here.</li></span>
-                <span><i class="fas fa-shopping-cart"></i><li class='ingredient-item'>Ingredients list will appear here.</li></span>
-                <span><i class="fas fa-shopping-cart"></i><li class='ingredient-item'>Ingredients list will appear here.</li></span>
+            <ul class='fa-ul'>
+                <li class='ingredient-item'><i class='fas fa-shopping-cart'></i>Ingredients will display here.</li>
             </ul> 
     </div>
    

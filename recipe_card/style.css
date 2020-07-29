@@ -19,6 +19,9 @@ body {
     margin-top: 50px;
 }
 
+#page-title {
+    font-size: 44px;
+}
 
 .recipe-container {
     margin: 50px;
@@ -53,7 +56,18 @@ button {
 }
 
 
-ul li {
-    list-style: none;
-    margin: 10px 0px;
+ul, li {
+    font-size: 22px;
+    
+}
+
+li > .ingredient-item {
+    padding: 20px;
+    
+}
+
+
+.fas {
+    font-size: 18px;
+    margin-right: 10px;
 }
